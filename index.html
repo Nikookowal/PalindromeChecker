@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class=" text-center bg-neutral-300 sm:mx-0 mx-5">
+    <h1 class="bg-green-600 py-5 text-5xl mb-5 font-semibold sm:w-full w-full sm:mt-0 mt-5 border-2 border-solid border-green-900">Verificador de Palíndromo</h1>
+
+    <div class="flex justify-center flex-col text-center items-center my-5">
+    <p class="italic font-semibold text-green-600 float-left">Palíndromos:</p>
+    <p class="float-right max-w-prose flex flex-wrap text-center items-center italic font-semibold text-base"> 
+          palavras que podem ser lidas da esquerda para a direita ou da direita para a esquerda
+    </p>
+    <img class=" max-w-xs border-2 border-black mt-5" src="palindromo.jpg" >
+    </div>
+
+    <div class="flex flex-col text-center justify-center items-center">
+        <p class=" mt-5 mb-2 text-xl text-center">Digite uma palavra para verificar se é um palíndromo:</p>
+
+        <input class="sm:w-60 w-1/2 p-1 my-2 border-solid border-2 border-black" id="str" type="text" name="text" placeholder="Ex: 'Ovo'" required></input>
+
+        <button class="font-semibold border-solid border-black border-2 bg-green-500 py-1 px-10 "  onclick="palindrome(document.getElementById('str').value)">CHECAR</button>
+
+    
+    </div>
+
+    <div class="mt-10">
+        <p class="text-xl font-serif">É um Palíndromo?</p>
+        <div >
+           <p class="text-green-600 font-bold text-lg" id="answer"></p>
+        </div>
+    </div>
+</body>
+
+<footer class="bg-green-600 text-black text-xl p-5 mt-60 mb-0 sborder-none ">
+    <span class="flex justify-end text-black font-semibold mt-1">
+     Nikodem Kowal, 2023
+      </span>
+      </footer>
+    
+
+<script src="main.js"> </script>
+</html>
